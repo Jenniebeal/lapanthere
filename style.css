@@ -9,8 +9,8 @@ body {
 
 a,
 button {
-    transition: all .3s ease-in-out;
-    outline: none!important;
+    transition: all 0.3s ease-in-out;
+    outline: none !important;
 }
 
 a:hover {
@@ -18,6 +18,14 @@ a:hover {
     cursor: pointer;
 }
 
+.focusedInputBlack:focus {
+    border-color: #313031;
+    outline:0;
+    outline: thin dotted \9;
+    -moz-box-shadow: 0 0 8px #313031;
+    box-shadow: 0 0 8px #313031!important;
+
+}
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -26,6 +34,7 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
+
 
 .bloc {
     width: 100%;
@@ -91,7 +100,6 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -304,11 +312,14 @@ a:hover {
 .navbar-brand img {
     max-height: 200px;
     margin: 0 5px 0 0;
-    display: inline;
+    display: inline-block;
+    height: 1.7em;
+    border-bottom: white solid 2px;
 }
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
+    margin: 2rem 20rem;
 }
 
 .nav-center .navbar-brand img {
@@ -317,11 +328,17 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
+    margin-right:  22rem;
     float: right;
     z-index: 1;
 }
 
+.navbar-nav li {
+    border-bottom: solid 2px white;
+}
+.navbar-nav li:hover {
+    border-bottom: solid 2px;
+}
 .nav > li {
     float: left;
     margin-top: 4px;
@@ -361,6 +378,7 @@ a:hover {
     position: relative;
     z-index: 2;
 }
+
 
 @media (min-width: 768px) {
     .site-navigation {
@@ -464,6 +482,11 @@ button {
     outline: none!important;
 }
 
+.description {
+    font-size: 22px;
+    margin:auto;
+    width: 65%;
+}
 .btn-rd {
     border-radius: 40px;
 }
@@ -506,29 +529,17 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: black;
     box-shadow: none;
 }
+label {
+    font-size: 15px;
+}
+p {
+    font-size: 15px;
 
-.scrollToTop {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0;
-    z-index: 500;
-    transition: all .3s ease-in-out;
 }
 
-.scrollToTop span {
-    margin-top: 6px;
-}
-
-.showScrollTop {
-    font-size: 14px;
-    opacity: 1;
-}
 
 a[data-lightbox] {
     position: relative;
@@ -676,8 +687,16 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
+blockquote {
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+.citationBloc {
+    width: 80%;
+    margin-left: 11%;
+}
+figcaption {
+    font-size: 1.1em;
 }
 
 .tight-width-whitespace {
@@ -775,7 +794,15 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
+
+}
+.container_description {
+    padding-left: 12em;
+}
+.container_detail {
+    padding-left: 12em;
+    font-size: 17px;
 }
 
 .btn-atomic-tangerine {
@@ -809,9 +836,6 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
 
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
@@ -858,6 +882,7 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
+   
 }
 
 @media (max-width: 991px) {
@@ -977,6 +1002,7 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
