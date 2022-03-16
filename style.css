@@ -35,6 +35,9 @@ a:hover {
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
+.noir {
+    color:#000!important;
+}
 
 .bloc {
     width: 100%;
@@ -670,7 +673,7 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 33px;
 }
 
 .hero-bloc-text-sub {
@@ -743,6 +746,7 @@ h3 {
 
 h1 {
     color: #333333!important;
+    font-size: 24px;
 }
 
 h4 {
@@ -798,16 +802,17 @@ h4 {
 
 }
 .container_description {
-    padding-left: 12em;
+    padding-left: 16em;
+    font-size: 36px;
 }
 .container_detail {
-    padding-left: 12em;
-    font-size: 17px;
+    padding-left: 27em;
+    font-size: 18px;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000!important;
 }
 
 .btn-atomic-tangerine:hover {
