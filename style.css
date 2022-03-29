@@ -91,7 +91,7 @@ a:hover {
 .bg-t-edge {
     background: top no-repeat;
 }
-
+/*
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -101,6 +101,7 @@ a:hover {
     left: 0;
     right: 0;
 }
+*/
 
 .texture-paper::before {
     background-size: 280px 280px;
@@ -323,7 +324,7 @@ a:hover {
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
-    margin: 2rem 20rem;
+    margin-left: -5em;
 }
 
 .nav-center .navbar-brand img {
@@ -716,10 +717,11 @@ blockquote {
 }
 .citationBloc {
     width: 80%;
-    margin-left: 11%;
+    margin-left: 35%;
 }
 figcaption {
     font-size: 1.1em;
+    margin-left: 45%;
 }
 
 .tight-width-whitespace {
@@ -822,11 +824,11 @@ h4 {
 
 }
 .container_description {
-    padding-left: 16em;
+    margin-left: 8em;
     font-size: 36px;
 }
 .container_detail {
-    padding-left: 27em;
+    margin-left: 11em;
     font-size: 18px;
 }
 
@@ -867,11 +869,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("small_img/agence-la-panthere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("small_img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -896,9 +898,19 @@ h4 {
     .nav-center.navbar .nav {
         width: 100%;
     }
+    .container_description {
+        margin-left: 6em;
+    }
+    .container_detail {
+        margin-left: 6em;
+    }
     .citationBloc {
-        width: 58%;
-        margin-left: 22%;
+        width: 100%;
+    }
+    figcaption {
+        width: 100%;
+        margin-left: 33%;
+
     }
 }
 
@@ -1120,16 +1132,28 @@ h4 {
     }
 
     .navbar-brand img[src$=svg] {
-        margin: 0;
+        margin: -4.5em;
     }
 
     .row {
         margin: 0;
     }
     .container_description {
+        margin-left: 0;
+    }
+    .container_detail {
+        margin-left: 0;
+    }
+    .citationBloc {
+        margin-left: 12%;
+      }
+    .container_description {
         font-size: 30px;
       }
       .portfolio-thumb {
         width: 100%;
       }
+      figcaption {
+        margin-left: 3%;
+    }
 }
